@@ -11,4 +11,6 @@ mongoose.connect('mongodb://felippe:felippe@cluster0-shard-00-00-ahjri.mongodb.n
 app.use(express.json());
 app.use(routes);
 
-app.listen(3333);
+var porta = process.env.PORT || 8080
+
+app.listen(porta);
